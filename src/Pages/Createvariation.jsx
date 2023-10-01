@@ -34,7 +34,7 @@ const Createvariation = () => {
                 body: formData
             }
 
-            const response = await fetch("https://surge-ai-backend-f9adfaf2dbc0.herokuapp.com/api/v1/dalle/variation", options)
+            const response = await fetch("https://backend-surge-ai-ea020498fad1.herokuapp.com/api/v1/dalle/variation", options)
             const data = await response.json()
             let ParseImage = `data:image/jpeg;base64,${data}`
             setImage(ParseImage)

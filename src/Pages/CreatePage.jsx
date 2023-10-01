@@ -24,7 +24,7 @@ const CreatePage = () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        const response = await fetch('https://surge-ai-backend-f9adfaf2dbc0.herokuapp.com/api/v1/dalle', {
+        const response = await fetch('https://backend-surge-ai-ea020498fad1.herokuapp.com/api/v1/dalle', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -51,7 +51,7 @@ const CreatePage = () => {
     if (form.prompt && form.photo) {
       setLoading(true);
       try {
-        const response = await fetch('https://surge-ai-backend-f9adfaf2dbc0.herokuapp.com/api/v1/post', {
+        const response = await fetch('https://backend-surge-ai-ea020498fad1.herokuapp.com/api/v1/post', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
